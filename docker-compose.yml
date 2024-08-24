@@ -64,7 +64,7 @@ services:
 
   s3:
     build:
-      context: ./packages/aws
+      context: ./packages/s3
       dockerfile: Dockerfile
     ports:
       - "30005:30005"
