@@ -13,3 +13,6 @@
 [submodule "packages/auth"]
 	path = packages/auth
 	url = https://github.com/seogaemo/hackseoul-auth-module
+[submodule "packages/packages/aws"]
+	path = packages/packages/aws
+	url = https://github.com/seogaemo/hackseoul-s3-module

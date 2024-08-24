@@ -58,6 +58,20 @@ services:
     networks:
       - api-internal
 
+  s3:
+    build:
+      context: ./packages/aws
+      dockerfile: Dockerfile
+    ports:
+      - "30005:30005"
+    restart: always
+    env_file:
+      - s3.env
+    epends_on:
+      - product
+    networks:
+      - api-internal
+
   gateway:
     build:
       context: ./gateway
@@ -68,7 +82,7 @@ services:
     env_file:
       - gateway.env
     depends_on:
-      - product
+      - s3
     networks:
       - api-internal
 
