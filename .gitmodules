@@ -1,0 +1,15 @@
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/seogaemo/hackseoul-gateway
+[submodule "packages/product"]
+	path = packages/product
+	url = https://github.com/seogaemo/hackseoul-product-module
+[submodule "packages/company"]
+	path = packages/company
+	url = https://github.com/seogaemo/hackseoul-company-module
+[submodule "packages/user"]
+	path = packages/user
+	url = https://github.com/seogaemo/hackseoul-user-module
+[submodule "packages/auth"]
+	path = packages/auth
+	url = https://github.com/seogaemo/hackseoul-auth-module
