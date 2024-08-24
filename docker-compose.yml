@@ -67,7 +67,7 @@ services:
     restart: always
     env_file:
       - s3.env
-    epends_on:
+    depends_on:
       - product
     networks:
       - api-internal
